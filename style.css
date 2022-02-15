@@ -1,0 +1,104 @@
+main {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nomPro {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    color: #5F5F5F;
+}
+
+.metierPro {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #9A9A9A;
+}
+
+.date {
+    font-family: Lexend;
+    font-weight: 600;
+    color: #357377;
+}
+
+#titre {
+    font-family: Lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #357377;
+}
+
+.divDate {
+    display: flex;
+    align-items: center;
+}
+
+.divHoraires {
+    display: flex;
+    column-gap: 20px;
+}
+
+.divHoraire {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #428A601A;
+}
+
+#fenetreHoraire {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.divHoraire a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#voirePlus {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #3647E3;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+#btn {
+    width: 338px;
+    height: 53px;
+    background-color: #428A60;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #FFFFFD;
+    border-radius: 30px;
+}
+
+.divDate {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chevronGauche {
+    align-self: start;
+    position: relative;
+    top: 70px;
+}
