@@ -1,3 +1,5 @@
+/*FIN RESET*/
+
 main {
     width: 390px;
     display: flex;
@@ -8,6 +10,7 @@ main {
 .imageProfile {
     width: 106px;
     height: 106px;
+    margin-bottom: 40px;
 }
 
 .nomPro {
@@ -17,6 +20,7 @@ main {
     font-weight: 600;
     color: #5F5F5F;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .metierPro {
@@ -24,15 +28,17 @@ main {
     font-weight: 400;
     color: #9A9A9A;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .date {
     font-family: Lexend;
     font-weight: 600;
     color: #357377;
+    margin-bottom: 20px;
 }
 
-#titre {
+.titre {
     font-family: Lexend;
     font-size: 20px;
     font-style: normal;
@@ -41,19 +47,21 @@ main {
     letter-spacing: 0em;
     text-align: left;
     color: #357377;
+    margin-bottom: 30px;
 }
 
-.divDate {
+.contenaireDate {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-.divHoraires {
+.horaires {
     display: flex;
     column-gap: 20px;
 }
 
-.divHoraire {
+.horaire {
     width: 100px;
     height: 50px;
     display: flex;
@@ -63,20 +71,20 @@ main {
     background-color: #428A601A;
 }
 
-#fenetreHoraire {
+.fenetreHoraire {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-.divHoraire a {
+.horaire a {
     text-decoration: none;
     color: #000000;
     font-size: 18px;
     font-weight: 500;
 }
 
-#voirePlus {
+.voirePlus {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
@@ -84,9 +92,10 @@ main {
     color: #3647E3;
     text-decoration: none;
     margin-top: 30px;
+    margin-bottom: 25px;
 }
 
-#btn {
+.btn {
     width: 338px;
     height: 53px;
     background-color: #428A60;
@@ -96,9 +105,10 @@ main {
     line-height: 19px;
     color: #FFFFFD;
     border-radius: 30px;
+    margin-top: 40px;
 }
 
-.divDate {
+.contenaireDate {
     width: 80%;
     display: flex;
     justify-content: space-between;
