@@ -5,18 +5,25 @@ main {
     align-items: center;
 }
 
+.imageProfile {
+    width: 106px;
+    height: 106px;
+}
+
 .nomPro {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     color: #5F5F5F;
+    text-align: center;
 }
 
 .metierPro {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     color: #9A9A9A;
+    text-align: center;
 }
 
 .date {
