@@ -1,0 +1,88 @@
+   header,
+   main {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .nom {
+       color: #5F5F5F;
+       font-family: 'Work Sans', sans-serif;
+       font-size: 18px;
+       font-weight: 600;
+   }
+   
+   .metier {
+       font-family: 'Work Sans', sans-serif;
+       font-size: 14px;
+       color: #9A9A9A;
+   }
+   
+   .titre {
+       color: #357377;
+       font-size: 20px;
+       font-weight: 600;
+       font-family: 'Lexend', sans-serif;
+   }
+   
+   details {
+       color: #357377;
+       font-size: 18px;
+       font-weight: 600;
+       font-family: 'Lexend', sans-serif;
+   }
+   
+   summary {
+       width: 398px;
+       margin-bottom: 5px;
+       display: flex;
+       justify-content: space-between;
+   }
+   
+   summary::after {
+       content: "";
+       width: 16px;
+       height: 16px;
+       background-image: url("images/chevronBas.svg");
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   
+   table {
+       border-spacing: 20px 10px;
+   }
+   
+   td {
+       width: 100px;
+       height: 50px;
+       border-radius: 5px;
+       background-color: #428A601A;
+       text-align: center;
+   }
+   
+   a {
+       color: #5F5F5F;
+       text-decoration: none;
+   }
+   
+   .bouton {
+       background-color: #428A60;
+       width: 398px;
+       height: 53px;
+       Padding: 8px, 24px, 8px, 24px;
+       border-radius: 30px;
+       font-size: 16px;
+       font-weight: 600;
+       color: #FFFFFD;
+       margin-top: 10px;
+   }
+   
+   @font-face {
+       font-family: 'lexend';
+       src: url("polices/Lexend-VariableFont_wght.ttf");
+   }
+   
+   @font-face {
+       font-family: 'Work Sans';
+       src: url("polices/WorkSans-Italic-VariableFont_wght.ttf");
+   }
