@@ -17,9 +17,12 @@
        }
        
        .imageProfile {
-           width: 106px;
-           height: 106px;
+           /* width: 106px;
+           height: 106px; */
            margin-bottom: 40px;
+           height: auto;
+           width: 100%;
+           aspect-ratio: attr(width) / attr(height);
        }
        
        .nomSite {
@@ -146,6 +149,7 @@
                display: flex;
                flex-direction: column;
                justify-content: space-around;
+               border: solid #68B1B680;
            }
            header {
                display: flex;
@@ -180,7 +184,9 @@
            }
            .photoPro {
                background-color: #FFD672;
-               width: 200px;
+               /* width: 200px; */
+               height: auto;
+               width: 100%;
            }
            .contenaire {
                justify-content: space-between;
@@ -220,5 +226,8 @@
                border-radius: 5px;
                margin-bottom: 5px;
                margin-top: 5px;
+               height: auto;
+               width: 100%;
+               aspect-ratio: attr(width) / attr(height);
            }
        }
