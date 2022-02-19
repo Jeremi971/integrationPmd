@@ -135,7 +135,7 @@
            border-radius: 30px;
            font-size: 16px;
            font-weight: 600;
-           color: #FFD672;
+           color: #000000;
            margin-top: 10px;
        }
        
@@ -157,6 +157,8 @@
                height: 5em;
                background-color: #68B1B680;
                border-radius: 5px;
+               position: sticky;
+               top: 0;
            }
            .contenaireLogo {
                display: flex;
@@ -165,8 +167,10 @@
            .liens {
                display: flex;
                width: 40%;
-               justify-content: space-around;
+               height: 100px;
                flex-wrap: wrap;
+               justify-content: space-around;
+               align-items: center;
            }
            .centragePhoto {
                justify-content: center;
@@ -182,7 +186,7 @@
                background-color: aliceblue;
            }
            .photoPro {
-               background-color: #FFD672;
+               background-color: #ffd672;
                height: auto;
                width: 100%;
            }
@@ -207,7 +211,7 @@
            }
            .titre {
                margin-top: 15px;
-               margin-bottom: 15px;
+               margin-bottom: 50px;
            }
            .horaire {
                width: 208px;
@@ -226,6 +230,5 @@
                margin-top: 5px;
                height: auto;
                width: 100%;
-               aspect-ratio: attr(width) / attr(height);
            }
        }
