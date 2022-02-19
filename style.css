@@ -149,7 +149,6 @@
                display: flex;
                flex-direction: column;
                justify-content: space-around;
-               border: solid #68B1B680;
            }
            header {
                display: flex;
@@ -184,7 +183,6 @@
            }
            .photoPro {
                background-color: #FFD672;
-               /* width: 200px; */
                height: auto;
                width: 100%;
            }
