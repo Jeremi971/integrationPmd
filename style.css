@@ -1,234 +1,274 @@
-       @font-face {
-           font-family: 'lexend';
-           src: url("polices/Lexend-VariableFont_wght.ttf");
-           font-display: swap;
-       }
-       
-       @font-face {
-           font-family: 'Work Sans';
-           src: url("polices/WorkSans-Italic-VariableFont_wght.ttf");
-           font-display: swap;
-       }
-       
-       @font-face {
-           font-family: 'Fredoka One';
-           src: url("polices/FredokaOne-Regular.ttf");
-           font-display: swap;
-       }
-       
-       .imageProfile {
-           /* width: 106px;
+   @font-face {
+       font-family: 'lexend';
+       src: url("polices/Lexend-VariableFont_wght.ttf");
+       font-display: swap;
+   }
+   
+   @font-face {
+       font-family: 'Work Sans';
+       src: url("polices/WorkSans-Italic-VariableFont_wght.ttf");
+       font-display: swap;
+   }
+   
+   @font-face {
+       font-family: 'Fredoka One';
+       src: url("polices/FredokaOne-Regular.ttf");
+       font-display: swap;
+   }
+   
+   .imageProfile {
+       /* width: 106px;
            height: 106px; */
-           margin-bottom: 40px;
+       margin-bottom: 40px;
+       height: auto;
+       width: 100%;
+       aspect-ratio: attr(width) / attr(height);
+   }
+   
+   .nomSite {
+       font-family: 'Fredoka One', cursive;
+       font-weight: 400;
+       font-size: 36px;
+       color: #5F5F5F;
+   }
+   
+   nav {
+       display: none;
+   }
+   
+   .contenaireLogo {
+       display: none;
+   }
+   
+   .centragePhoto,
+   main {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .nom {
+       color: #5F5F5F;
+       font-family: 'Work Sans', sans-serif;
+       font-size: 18px;
+       font-weight: 600;
+   }
+   
+   .metier {
+       font-family: 'Work Sans', sans-serif;
+       font-size: 14px;
+       color: #4b4747;
+   }
+   
+   .titre {
+       color: #357377;
+       font-size: 20px;
+       font-weight: 600;
+       font-family: 'Lexend', sans-serif;
+   }
+   
+   details {
+       max-width: 395px;
+       width: 100%;
+       color: #357377;
+       font-size: 18px;
+       font-weight: 600;
+       font-family: 'Lexend', sans-serif;
+       display: flex;
+       flex-direction: column;
+   }
+   
+   summary {
+       width: 100%;
+       max-width: 398px;
+       margin-bottom: 5px;
+       display: flex;
+       justify-content: space-between;
+   }
+   
+   summary::after {
+       content: "";
+       width: 21px;
+       height: 12px;
+       background-image: url("images/chevronBas.svg");
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   
+   .gpContenaireHoraire {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+   
+   .contenaireHoraire {
+       width: 100%;
+       max-width: 350px;
+       height: 60px;
+       display: flex;
+       column-gap: 20px;
+       margin: auto;
+   }
+   
+   .horaire {
+       display: flex;
+       max-width: 102px;
+       height: 52px;
+       border-radius: 5px;
+       background-color: #428A601A;
+       align-items: center;
+       justify-content: center;
+       flex-grow: 1;
+   }
+   
+   a {
+       color: #5F5F5F;
+       text-decoration: none;
+       font-size: 18px;
+   }
+   
+   .btn {
+       background-color: #428A60;
+       max-width: 398px;
+       height: 53px;
+       Padding: 8px, 24px, 8px, 24px;
+       border-radius: 30px;
+       font-size: 16px;
+       font-weight: 600;
+       color: #000000;
+       margin-top: 10px;
+   }
+   
+   aside {
+       display: none;
+   }
+   /* **************************************************************** */
+   /* Partie Validation RDV */
+   /* **************************************************************** */
+   
+   .validationRdv {
+       width: 361px;
+       height: 372px;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       box-shadow: 1px 1px 12px #555;
+       display: none;
+   }
+   
+   .btn2 {
+       background-color: #428A60;
+       max-width: 320px;
+       max-height: 48px;
+       width: 100%;
+       height: 100%;
+       Padding: 8px, 24px, 8px, 24px;
+       border-radius: 30px;
+       font-size: 16px;
+       font-weight: 600;
+       color: #000000;
+       margin-top: 10px;
+   }
+   
+   .para {
+       margin-top: 10px;
+   }
+   /* ********************************************************** *** */
+   /* /* Partie Pc
+   ****************************************** ********************* */
+   
+   @media(min-width:540px) {
+       body {
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+       }
+       header {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           height: 5em;
+           background-color: #68B1B680;
+           border-radius: 5px;
+           position: sticky;
+           top: 0;
+           z-index: 0;
+       }
+       .contenaireLogo {
+           display: flex;
+           column-gap: 10px;
+       }
+       .liens {
+           display: flex;
+           width: 40%;
+           height: 100px;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           align-items: center;
+       }
+       .centragePhoto {
+           justify-content: center;
+           background-color: #68b69c;
+           border-radius: 5px;
+           width: 100%;
+       }
+       .contenairePhotoPro {
+           align-self: flex-end;
+       }
+       .IdentitePro {
+           row-gap: 10px;
+           background-color: aliceblue;
+           z-index: 1;
+           position: relative;
+       }
+       .photoPro {
+           background-color: #ffd672;
            height: auto;
            width: 100%;
-           aspect-ratio: attr(width) / attr(height);
+           z-index: 1;
+           position: relative;
        }
-       
-       .nomSite {
-           font-family: 'Fredoka One', cursive;
-           font-weight: 400;
-           font-size: 36px;
-           color: #5F5F5F;
-       }
-       
-       nav {
-           display: none;
-       }
-       
-       .contenaireLogo {
-           display: none;
-       }
-       
-       .centragePhoto,
-       main {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-       }
-       
-       .nom {
-           color: #5F5F5F;
-           font-family: 'Work Sans', sans-serif;
-           font-size: 18px;
-           font-weight: 600;
-       }
-       
-       .metier {
-           font-family: 'Work Sans', sans-serif;
-           font-size: 14px;
-           color: #4b4747;
-       }
-       
-       .titre {
-           color: #357377;
-           font-size: 20px;
-           font-weight: 600;
-           font-family: 'Lexend', sans-serif;
-       }
-       
-       details {
-           max-width: 395px;
-           width: 100%;
-           color: #357377;
-           font-size: 18px;
-           font-weight: 600;
-           font-family: 'Lexend', sans-serif;
-           display: flex;
-           flex-direction: column;
-       }
-       
-       summary {
-           width: 100%;
-           max-width: 398px;
-           margin-bottom: 5px;
-           display: flex;
+       .contenaire {
            justify-content: space-between;
+           display: flex;
+           margin: 5em;
+           justify-content: flex-start;
+           background-color: #FFFFFD;
+           margin-top: none;
        }
-       
-       summary::after {
-           content: "";
-           width: 21px;
-           height: 12px;
-           background-image: url("images/chevronBas.svg");
-           background-repeat: no-repeat;
-           background-size: cover;
-       }
-       
-       .gpContenaireHoraire {
+       main {
+           width: 100%;
            display: flex;
            flex-direction: column;
            justify-content: center;
        }
-       
-       .contenaireHoraire {
-           width: 100%;
-           max-width: 350px;
-           height: 60px;
-           display: flex;
-           column-gap: 20px;
-           margin: auto
-       }
-       
-       .horaire {
-           display: flex;
-           max-width: 102px;
-           height: 52px;
-           border-radius: 5px;
-           background-color: #428A601A;
-           align-items: center;
-           justify-content: center;
-           flex-grow: 1;
-       }
-       
-       a {
-           color: #5F5F5F;
+       nav a {
            text-decoration: none;
-           font-size: 18px;
-       }
-       
-       .bouton {
-           background-color: #428A60;
-           max-width: 398px;
-           height: 53px;
-           Padding: 8px, 24px, 8px, 24px;
-           border-radius: 30px;
-           font-size: 16px;
-           font-weight: 600;
            color: #000000;
-           margin-top: 10px;
+           font-size: 18px;
+           font-weight: 500;
        }
-       
+       .titre {
+           margin-top: 15px;
+           margin-bottom: 50px;
+       }
+       .horaire {
+           width: 208px;
+       }
        aside {
-           display: none;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           width: 40%;
+           margin: 2em;
+           flex-wrap: wrap;
        }
-       /* ********************************************************** *** */
-       
-       @media(min-width:540px) {
-           body {
-               display: flex;
-               flex-direction: column;
-               justify-content: space-around;
-           }
-           header {
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               height: 5em;
-               background-color: #68B1B680;
-               border-radius: 5px;
-               position: sticky;
-               top: 0;
-           }
-           .contenaireLogo {
-               display: flex;
-               column-gap: 10px;
-           }
-           .liens {
-               display: flex;
-               width: 40%;
-               height: 100px;
-               flex-wrap: wrap;
-               justify-content: space-around;
-               align-items: center;
-           }
-           .centragePhoto {
-               justify-content: center;
-               background-color: #68b69c;
-               border-radius: 5px;
-               width: 100%;
-           }
-           .contenairePhotoPro {
-               align-self: flex-end;
-           }
-           .IdentitePro {
-               row-gap: 10px;
-               background-color: aliceblue;
-           }
-           .photoPro {
-               background-color: #ffd672;
-               height: auto;
-               width: 100%;
-           }
-           .contenaire {
-               justify-content: space-between;
-               display: flex;
-               margin: 6em;
-               justify-content: flex-start;
-               background-color: #FFFFFD;
-           }
-           main {
-               width: 100%;
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-           }
-           nav a {
-               text-decoration: none;
-               color: #000000;
-               font-size: 18px;
-               font-weight: 500;
-           }
-           .titre {
-               margin-top: 15px;
-               margin-bottom: 50px;
-           }
-           .horaire {
-               width: 208px;
-           }
-           aside {
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-               width: 40%;
-               margin: 2em;
-               flex-wrap: wrap;
-           }
-           .news {
-               border-radius: 5px;
-               margin-bottom: 5px;
-               margin-top: 5px;
-               height: auto;
-               width: 100%;
-           }
+       .news {
+           border-radius: 5px;
+           margin-bottom: 5px;
+           margin-top: 5px;
+           height: auto;
+           width: 100%;
        }
+   }

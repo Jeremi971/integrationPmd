@@ -9,6 +9,7 @@
     <title>Mealtips</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
 </head>
 
@@ -37,15 +38,24 @@
             </figcaption>
 
     </section>
-    <div class="contenaire ">
-        <main>
-            <h1 class="titre ">Choix date de consultation</h1>
 
+    <div class="contenaire " id="contenaireJs">
+
+        <main id="mainJs">
+
+            <h1 class="titre ">Choix date de consultation</h1>
+            <div class="validationRdv" id="validation">
+                <img src="/images/valider.svg" alt="logo valider" width="63px" height="63px" class="LogoValidation">
+                <p class="para">Vous avez bien fixé un rendez vous,</p>
+                <p class="para" id="para_js"></p>
+                <p class="para">Vous recevrez les détails par courrier <br> et par SMS.</p>
+                <button class="btn2" id="btn2_js">C'est noté</button>
+            </div>
             <details open>
-                <summary>Lundi 14 février</summary>
-                <div class="contenaireHoraire ">
+                <summary id="date_1">Lundi 14 février</summary>
+                <div class="contenaireHoraire " id="blockVisible_1">
                     <div class="horaire ">
-                        <a href="# ">08:00</a>
+                        <a href=" # ">08:00</a>
                     </div>
                     <div class="horaire ">
                         <a href="# ">10:00</a>
@@ -54,7 +64,7 @@
                         <a href="# ">11:20</a>
                     </div>
                 </div>
-                <div class="contenaireHoraire ">
+                <div class="contenaireHoraire " id="blockVisible_2">
                     <div class="horaire ">
                         <a href="# ">13:00</a>
                     </div>
@@ -65,7 +75,7 @@
                         <a href="# ">15:00</a>
                     </div>
                 </div>
-                <div class="contenaireHoraire ">
+                <div class="contenaireHoraire " id="blockVisible_3">
                     <div class="horaire ">
                         <a href="# ">16:00</a>
                     </div>
@@ -79,8 +89,8 @@
 
             </details>
             <details>
-                <summary>Samedi 19 février</summary>
-                <div class="contenaireHoraire ">
+                <summary id="date_2">Samedi 19 février</summary>
+                <div class="contenaireHoraire " id="blockVisible_4">
                     <div class="horaire ">
                         <a href="# ">08:20</a>
                     </div>
@@ -91,7 +101,7 @@
                         <a href="# ">10:45</a>
                     </div>
                 </div>
-                <div class="contenaireHoraire ">
+                <div class="contenaireHoraire " id="blockVisible_5">
                     <div class="horaire ">
                         <a href="# ">11:00</a>
                     </div>
@@ -102,7 +112,7 @@
                         <a href="# ">14:00</a>
                     </div>
                 </div>
-                <div class="contenaireHoraire ">
+                <div class="contenaireHoraire " id="blockVisible_6">
                     <div class="horaire ">
                         <a href="# ">15:10</a>
                     </div>
@@ -116,9 +126,10 @@
 
             </details>
             <details>
-                <summary>Lundi 21 février</summary>
+
+                <summary id="date_3">Lundi 21 février</summary>
                 <div class="tableauHoraire ">
-                    <div class="contenaireHoraire ">
+                    <div class="contenaireHoraire " id="blockVisible_7">
                         <div class="horaire ">
                             <a href="# ">08:00</a>
                         </div>
@@ -129,7 +140,7 @@
                             <a href="# ">09:00</a>
                         </div>
                     </div>
-                    <div class="contenaireHoraire ">
+                    <div class="contenaireHoraire " id="blockVisible_8">
                         <div class="horaire ">
                             <a href="# ">09:25</a>
                         </div>
@@ -140,7 +151,7 @@
                             <a href="# ">10:00</a>
                         </div>
                     </div>
-                    <div class="contenaireHoraire ">
+                    <div class="contenaireHoraire " id="blockVisible_9">
                         <div class="horaire ">
                             <a href="# ">11:12</a>
                         </div>
@@ -154,8 +165,8 @@
 
             </details>
             <details>
-                <summary>Mercredi 23 février</summary>
-                <div class="contenaireHoraire ">
+                <summary id="date_4">Mercredi 23 février</summary>
+                <div class="contenaireHoraire " id="blockVisible_10">
                     <div class="horaire ">
                         <a href="# ">08:00</a>
                     </div>
@@ -166,7 +177,7 @@
                         <a href="# ">10:00</a>
                     </div>
                 </div>
-                <div class="contenaireHoraire ">
+                <div class="contenaireHoraire " id="blockVisible_11">
                     <div class="horaire ">
                         <a href="# ">11:40</a>
                     </div>
@@ -177,7 +188,7 @@
                         <a href="# ">14:00</a>
                     </div>
                 </div>
-                <div class="contenaireHoraire ">
+                <div class="contenaireHoraire " id="blockVisible_12">
                     <div class="horaire ">
                         <a href="# ">15:20</a>
                     </div>
@@ -190,9 +201,9 @@
                 </div>
             </details>
             <details>
-                <summary>Lundi 29 février</summary>
+                <summary id="date_5">Lundi 29 février</summary>
 
-                <div class="contenaireHoraire ">
+                <div class="contenaireHoraire " id="blockVisible_13">
                     <div class="horaire ">
                         <a href="# ">10:00</a>
                     </div>
@@ -203,7 +214,7 @@
                         <a href="# ">13:40</a>
                     </div>
                 </div>
-                <div class="contenaireHoraire ">
+                <div class="contenaireHoraire " id="blockVisible_14">
                     <div class="horaire ">
                         <a href="# ">14:00</a>
                     </div>
@@ -214,7 +225,7 @@
                         <a href="# ">15:00</a>
                     </div>
                 </div>
-                <div class="contenaireHoraire ">
+                <div class="contenaireHoraire " id="blockVisible_15">
                     <div class="horaire ">
                         <a href="# ">16:00</a>
                     </div>
@@ -227,18 +238,18 @@
                 </div>
 
             </details>
-            <button class="bouton ">Afficher plus de disponibilités</button>
+            <button class="btn " id="btn_js">Afficher plus de disponibilités</button>
 
         </main>
         <aside>
             <figure>
-                <img src="images/conseil .svg " alt="article conseil " class="news ">
+                <img src="images/conseil .svg " alt="article conseil " class="news " id="imageJs_1">
                 <figcaption>
                     <a href="# ">Conseil du jour.</a>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/inspiration.svg " alt="article inspiration " class="news ">
+                <img src="images/inspiration.svg " alt="article inspiration " class="news " id="imageJs_2">
                 <figcaption>
                     <a href="# ">Inspiration du jour.</a>
                 </figcaption>
