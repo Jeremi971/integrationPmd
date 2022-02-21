@@ -94,7 +94,7 @@ for (let index = 0; index < heure.length; index++) {
                 let paragraphe = document.getElementById("para_js");
                 let phrase = `${dateContent} à ${heureContent}`;
                 paragraphe.textContent = phrase;
-                dateId.click;
+
                 // console.log(phrase);
 
             })
