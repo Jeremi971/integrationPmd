@@ -10,16 +10,17 @@ function effacer() {
 
         }
     }
-    let contenaireHoraires = document.getElementsByClassName("contenaireHoraire");
-    for (let key in summary) {
-        if (Object.hasOwnProperty.call(contenaireHoraires, key)) {
-            let element = contenaireHoraires[key];
-            element.id = `contenaireHoraire_${key}`;
-            document.getElementById(`contenaireHoraire_${key}`).style.display = "none";
-            // console.log(element);
+    let horaires = document.getElementsByClassName("horaire");
+    for (let key in horaires) {
+        if (Object.hasOwnProperty.call(horaires, key)) {
+            let element = horaires[key];
+            element.id = `horaire_${key}`;
+            document.getElementById(`horaire_${key}`).style.display = "none";
+            console.log(element);
 
         }
     }
+
     let btn = document.getElementById("btn_js").style.display = "none";
     let validation = document.getElementById("validation").style.display = "flex";
     let validationColor = document.getElementById("validation").style.backgroundColor = "white"
@@ -38,10 +39,14 @@ function restaurer() {
             document.getElementById(`date_${key}`).style.display = "flex";
         }
     }
-    let contenaireHoraires = document.getElementsByClassName("contenaireHoraire");
-    for (let key in summary) {
-        if (Object.hasOwnProperty.call(contenaireHoraires, key)) {
-            document.getElementById(`contenaireHoraire_${key}`).style.display = "flex";
+    let horaires = document.getElementsByClassName("horaire");
+    for (let key in horaires) {
+        if (Object.hasOwnProperty.call(horaires, key)) {
+            let element = horaires[key];
+            // element.id = `horaire_${key}`;
+            document.getElementById(`horaire_${key}`).style.display = "flex";
+            console.log(element);
+
         }
     }
     let btn = document.getElementById("btn_js").style.display = "block";
@@ -58,7 +63,6 @@ for (let key in heure) {
     if (Object.hasOwnProperty.call(heure, key)) {
         let element = heure[key];
         element.id = `heure_${key}`;
-
     }
 }
 // récupération des ID des div contenant les horaires pour pouvoir les manipuler en langage js.
@@ -87,28 +91,9 @@ for (let index = 0; index < heure.length; index++) {
             let dateContent = element.textContent;
             // console.log(dateContent);
             // PARAGRAPHE
-
-            let dateId = document.getElementById(`date_${key}`);
-            heureId.addEventListener("click", function() {
-
-                let paragraphe = document.getElementById("para_js");
-                let phrase = `${dateContent} à ${heureContent}`;
-                paragraphe.textContent = phrase;
-
-                // console.log(phrase);
-
-            })
-
-            // let dateId = document.getElementById(`date_${key}`);
-            // dateId.addEventListener("click", function() {
-            //     let paragraphe = document.getElementById("para_js");
-            //     let phrase = `${dateContent} à ${heureContent}`;
-            //     paragraphe.textContent = phrase;
-            //     console.log(phrase);
-            // })
-
-
-
+            let paragraphe = document.getElementById("para_js");
+            let phrase = `${dateContent} à ${heureContent}`;
+            paragraphe.textContent = phrase;
         }
     }
 
