@@ -16,7 +16,7 @@ function effacer() {
             let element = horaires[key];
             element.id = `horaire_${key}`;
             document.getElementById(`horaire_${key}`).style.display = "none";
-            console.log(element);
+            // console.log(element);
 
         }
     }
@@ -45,7 +45,7 @@ function restaurer() {
             let element = horaires[key];
             // element.id = `horaire_${key}`;
             document.getElementById(`horaire_${key}`).style.display = "flex";
-            console.log(element);
+            // console.log(element);
 
         }
     }
@@ -63,6 +63,7 @@ for (let key in heure) {
     if (Object.hasOwnProperty.call(heure, key)) {
         let element = heure[key];
         element.id = `heure_${key}`;
+
     }
 }
 // récupération des ID des div contenant les horaires pour pouvoir les manipuler en langage js.
@@ -94,6 +95,20 @@ for (let index = 0; index < heure.length; index++) {
             let paragraphe = document.getElementById("para_js");
             let phrase = `${dateContent} à ${heureContent}`;
             paragraphe.textContent = phrase;
+
+            let dateId = document.getElementById(`date_${key}`);
+            heureId.addEventListener("click", function() {
+
+                let paragraphe = document.getElementById("para_js");
+                let phrase = `${dateContent} à ${heureContent}`;
+                paragraphe.textContent = phrase;
+
+                // console.log(phrase);
+
+            })
+
+
+
         }
     }
 
